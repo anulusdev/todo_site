@@ -1,0 +1,20 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Virtual env
+myenv/
+venv/
+env/
+
+# SQLite database
+db.sqlite3
+
+# PyCharm / IntelliJ IDEA settings
+.idea/
+
+# Django collected static files
+/static/
+
+# Media uploads
+/media/
