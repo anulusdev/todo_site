@@ -28,3 +28,11 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with:
+        image: anulusdev/todo_site
+        registry: docker.io
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
